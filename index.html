@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Rock - Paper - Scissors</h1>
+    <img id="imageHappy" src="" />
+    <img id="imageSad" src="" />
+
+    <p>You have 5seconds to play the game. Good luck!</p>
+    <button onclick="setTimeout(gameStart, 5000);">Play</button>
+
+    <div id="id_confrmdiv">
+      Did you win? <br />
+      <button type="button" id="id_truebtn" onclick="happyImage()">Yes</button>
+      <button type="button" id="id_falsebtn" onclick="sadImage()">No</button>
+    </div>
+
+    <div class="choices">
+      <button onclick="playGame('rock')">✊</button>
+      <button onclick="playGame('paper')">🖐️</button>
+      <button onclick="playGame('scissors')">✌️</button>
+    </div>
+
+    <div id="playerDisplay">PLAYER:</div>
+    <div id="computerDisplay">COMPUTER:</div>
+    <div id="resultDisplay"></div>
+
+    <div class="scoreDisplay">
+      Player Score:
+      <span id="playerScoreDisplay">0</span>
+    </div>
+    <div class="scoreDisplay">
+      Computer Score:
+      <span id="computerScoreDisplay">0</span>
+    </div>
+  </body>
+  <script src="script.js" type="module"></script>
+</html>

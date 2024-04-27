@@ -1,0 +1,102 @@
+body {
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(9, 0, 8);
+	color: rgb(255, 255, 255);
+}
+
+#id_confrmdiv
+{
+		margin-top: 0px;
+    display: none;
+    background-color: #000000;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    position: fixed;
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#id_confrmdiv button {
+	margin-top: 20px;
+    background-color: #ffffff;
+    display: inline-block;
+    border-radius: 3px;
+    border: 1px solid #ffffff;
+    text-align: center;
+    width: 80px;
+    cursor: pointer;
+}
+
+#id_confrmdiv .button:hover
+{
+    background-color: #ffffff;
+}
+
+#confirmBox .message
+{
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+h1 {
+	font-size: 3.5rem;
+	color: rgb(255, 255, 255);
+	
+}
+p {
+animation: blinker 1.5s linear infinite;
+}
+@keyframes blinker {
+	50% {
+		opacity: 0;
+	}
+}
+button {
+	margin-bottom: 30px;
+}
+.choices {
+	margin-bottom: 30px;
+}
+
+.choices button {
+font-size: 7.5rem;
+min-width: 160px;
+margin: 0 10px;
+border-radius: 500px;
+background-color: rgb(200, 255, 0);
+cursor: pointer;
+transition: background-color 0.5s ease;
+}
+
+.choices button:hover {
+	background-color: rgb(255, 51, 0);
+}
+
+#playerDisplay, #computerDisplay {
+	font-size: 2.5rem;
+}
+
+#resultDisplay {
+	font-size: 5rem;
+	margin: 30px 0;
+}
+.scoreDisplay {
+	font-size: 2rem;
+}
+
+.greenText, #playerScoreDisplay {
+color: rgb(200, 255, 0);
+}
+
+.redText, #computerScoreDisplay, p {
+color: rgb(255, 51, 0);
+}
